@@ -15,8 +15,9 @@
   %body
     #fb-root
     .container
-      #header
-        =# render 'layouts/header'       
+      - if current_user
+        #header
+          = render 'layouts/header'       
       #content
         = yield
       %hr  

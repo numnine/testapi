@@ -13,7 +13,7 @@ window.fbAsyncInit = ->
 
   $('#fblogin').click (e) ->
     FB.login (response) ->
-    	console.log response
+      window.location = '/auth/facebook' if response.authResponse
 
   $('#sign_out').click (e) ->
     FB.getLoginStatus (response) ->

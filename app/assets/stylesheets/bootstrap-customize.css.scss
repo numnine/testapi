@@ -3,6 +3,13 @@
 *= require bootstrap-responsive.min
 */
 
+body{
+	font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+	color: #444;
+	font-size: 13px;
+	font-weight: normal;
+}
+
 .container{
 	max-width: 700px;
 }
