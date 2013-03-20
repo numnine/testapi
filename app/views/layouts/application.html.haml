@@ -4,15 +4,19 @@
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
 
+    %title GroupMeal | The simplest way of scheduling meals with your groups and friends
+    %meta{:content => "The simplest way of scheduling meals with your groups and friends", :name => "description"}
+    %meta{:content => "The simplest way of scheduling meals with your groups and friends", :property => "og:title"}
+
     = stylesheet_link_tag "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
     
   %body
+    #fb-root
     .container
       #header
-        = render 'layouts/header'      
-      %hr  
+        =# render 'layouts/header'       
       #content
         = yield
       %hr  
