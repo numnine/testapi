@@ -5,8 +5,9 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'jquery-rails'
 gem 'omniauth-facebook'
+gem 'jquery-rails'
+gem 'haml'
 
 group :test do
   gem 'capybara', '1.1.2'

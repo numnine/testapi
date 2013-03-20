@@ -1,8 +1,10 @@
 SetupDinner::Application.routes.draw do
+  get "welcome/index"
+
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
   match 'signout', to: 'sessions#destroy', as: 'signout'
   
-  root to: 'static_pages#home'
+  root to: 'welcome#index'
 
 end
